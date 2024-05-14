@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Presupuesto</title>
+    <link rel="stylesheet" href="formulario_presupuesto.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Presupuesto</h1>
+        <form action="/guardar_presupuesto" method="POST">
+            <div class="form-group">
+                <label for="donacion">Donación:</label>
+                <input type="number" step="0.01" id="donacion" name="donacion" required>
+            </div>
+            <div class="form-group">
+                <label for="gasto">Gasto:</label>
+                <input type="number" step="0.01" id="gasto" name="gasto" required>
+            </div>
+            <div class="form-group">
+                <label for="ingreso">Ingreso:</label>
+                <input type="number" step="0.01" id="ingreso" name="ingreso" required>
+            </div>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>
